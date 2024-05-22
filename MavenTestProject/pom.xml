@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.israr-zaslavskaya</groupId>
+    <artifactId>MavenTestProject</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!-- Mailing Lists Configuration -->
+    <mailingLists>
+        <mailingList>
+            <name>Users</name>
+            <subscribe>users-subscribe@example.com</subscribe>
+            <unsubscribe>users-unsubscribe@example.com</unsubscribe>
+            <post>users@example.com</post>
+            <archive>http://example.com/mail-archive/users</archive>
+        </mailingList>
+        <mailingList>
+            <name>Developers</name>
+            <subscribe>dev-subscribe@example.com</subscribe>
+            <unsubscribe>dev-unsubscribe@example.com</unsubscribe>
+            <post>dev@example.com</post>
+            <archive>http://example.com/mail-archive/dev</archive>
+        </mailingList>
+    </mailingLists>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <!-- <version>4.0.0</version>-->
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.4.0</version>
+        </dependency>
+
+
+    </dependencies>
+
+</project>
